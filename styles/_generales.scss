@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin:0;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: $colorfondo;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Oswald:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Oswald:wght@200&display=swap');
+
+.stick{    position: sticky;
+    top: 0px;}
+
+h1{
+        font-family:'Oswald', sans-serif;
+        font-size: 50vh;
+        text-align: center;
+  }
+
+.logo{
+    display: flex;
+    justify-content: left;
+    margin-left: left;
+    img {
+
+        width: 15%;
+        
+        }
+    }
+
+  
+
+footer{
+    background-color: $colorfondo;
+   
+    font-size: 30px; 
+    margin-top: 50px;
+    padding: 30px;
+} 
+
+
+img{
+    margin-top: 0px;
+    margin-left: 0px;
+    padding: 10px;
+    border-radius: 10%;
+    width: 20%;
+}
+
+p{
+    color: rgb(211, 42, 12);
+    font-size: 35px;
+    font-family:'Amatic SC';
+}
+
+.liNks{
+    color: brown;
+    text-transform: lowercase;
+    font-size: 30px;
+}
+
+
+
+/**declaracion de areas**/
+
+
+.titulo {grid-area: titulo;}
+.nav {grid-area: nav;
+position: sticky;
+top: 0ch;
+background-color: red;}
+.navlat{grid-area: navlat;}
+.productos{grid-area: producto;}
+.footer{grid-area: footer;}
+
+
+
+
+.menuContainer{
+    color: brown;
+
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    width: 200%;
+    font-size: 20px;
+    margin-left: 20px;
+    padding: 0%;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+

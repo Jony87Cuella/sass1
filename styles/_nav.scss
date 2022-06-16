@@ -1,0 +1,41 @@
+ul{
+    position: sticky;
+    top: 0px;
+
+    li{
+         grid-area: header;
+         display: inline-block;
+         position: relative;
+         width: 100px;
+         padding: 20px;
+         margin: 10px;
+         margin-right: 5px;
+         align-items: center;  
+         font:
+             { size:15px;
+               weight: 100;
+             }
+              
+        a{
+            text-decoration: none;
+            color: brown; 
+    
+        }
+}
+
+}
+
+
+/*nav lateral*/
+
+
+
+div.navlat{
+    display: flex;
+    justify-content: space-around;
+    a{
+        marker: none;
+    }
+
+}
+

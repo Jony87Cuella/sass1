@@ -1,0 +1,236 @@
+@import"nav";
+@import"generales";
+@import"variables";
+
+
+
+
+
+/*mobile pphone*/
+/*88888888888888888888888888888888888*/
+@media (max-width:320px){
+
+
+    /*grilla*/
+
+.grid-container{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    background-color: brown;
+    grid-template-areas: 
+    'titulo'
+    'nav '
+    'navlat'
+    'producto'
+    'footer';
+   
+
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+
+}
+   
+
+
+
+div.productos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(247, 247, 247);
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+}
+
+/*desktop*888888888888888888888888888888888888888*/
+
+@media (min-width:1024px) {
+    
+
+body {
+    overflow-x: hidden;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Oswald:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Oswald:wght@200&display=swap');
+
+ /*grilla*/
+
+.grid-container{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    background-color: brown;
+    grid-template-areas: 
+    'titulo titulo titulo'
+    'nav nav nav'
+    'navlat producto producto'
+    'footer footer footer';
+}
+
+.grid-container div{
+ background-color: bisque;
+border: 1px solid black;
+grid-template-rows: auto auto auto;
+justify-content: center;
+gap: 10px;
+}
+
+/* declaracion de areas*/
+.titulo {grid-area: titulo;}
+.nav {grid-area: nav;
+position: sticky;
+top: 0ch;}
+.navlat{grid-area: navlat;}
+.productos{grid-area: producto;}
+.footer{grid-area: footer;}
+
+
+
+
+
+img{
+    margin-top: 0px;
+    margin-left: 0px;
+    padding: 10px;
+    border-radius: 10%;
+    width: 20%;
+}
+
+p{
+    color: rgb(211, 42, 12);
+    font-size: 35px;
+    font-family:'Amatic SC';
+}
+  
+}
+
+/********************************************/
+
+
+
+
+.liNks{
+    color: brown;
+    text-transform: lowercase;
+    font-size: 30px;
+}
+
+
+.menuContainer{
+    color: brown;
+
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    width: 200%;
+    font-size: 20px;
+    margin-left: 20px;
+    padding: 0%;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+
+
+.productos{
+    display: flex;
+    justify-content: center;
+    background-color: $colorfondo;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+
+div.logo img {
+
+    width: 15%;
+}
+
+
+
+div.navlat{
+    display: flex;
+    justify-content: space-around;
+   ;
+}
+
+
+
+
+
+
+
+
+
+.productos{
+    display: flex;
+    justify-content: center;
+    background-color: bisque;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+
+
+
+/*animaciones*/
+
+.aumento:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+
+}
+
+.tracking-in-expand {
+	-webkit-animation: tracking-in-expand 4s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand 4s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+            transition: 1s;
+}
+
+@-webkit-keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .contactos{
+    width: 110%;
+  }
+
